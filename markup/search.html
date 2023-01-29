@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пошук</title>
+<style>   
+    table {
+        border-collapse: collapse;
+        border: 3px solid purple;
+        width: 800px;
+     }
+     
+     td {
+        padding: 10px;
+        border: 1px solid #000;
+     }
+     
+     td:first-child {
+        width: 100px;
+     }
+
+     #price {
+        width: 50px;
+     }
+
+</style>      
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <form action="https://fom.in.ua/echo" method="post"> 
+            <form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Пошук</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="type">Тип кузова</label>
+                            </td>
+                            <td>
+                                <select id="type">Вибір
+                                    <option value="">Універсал</option>
+                                    <option value="">Седан</option>
+                                    <option value="">Хетчбек</option>
+                                    <option value="">Кроссовер</option>
+                                    <option value="">Купе</option>
+                                    <option value="">Кабріолет</option>
+                                    <option value="">Мінівен</option>
+                                    <option value="">Пікап</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="mark">Марка авто</label>
+                            </td>
+                            <td>
+                                <select id="mark">Вибір
+                                    <option value="">Audi</option>
+                                    <option value="">BMW</option>
+                                    <option value="">Ford</option>
+                                    <option value="">Toyota</option>
+                                    <option value="">Honda</option>
+                                    <option value="">Kia</option>
+                                    <option value="">Opel</option>
+                                    <option value="">Mercedes</option>
+                                    <option value="">Skoda</option>
+                                    <option value="">Volvo</option>
+                                    <option value="">Renault</option>
+                                    <option value="">Nissan</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="country">Країна виробник</label>
+                            </td>
+                            <td>
+                                <select id="country">Вибір
+                                    <option value="">Японія</option>
+                                    <option value="">Німеччина</option>
+                                    <option value="">Польща</option>
+                                    <option value="">Україна</option>
+                                    <option value="">США</option>
+                                    <option value="">Корея</option>
+                                    <option value="">Швеція</option>
+                                    <option value="">Італія</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="price">Ціна</label>
+                            </td>
+                            <td>
+                                <input id="price" type="text"> $ 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="year">Рік випуску</label>
+                            </td>
+                            <td>
+                                <input type="number" min="1999" max="2023"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="character">Стан</label>
+                            </td>
+                            <td>
+                                <label><input type="checkbox" name="character">Б/у</label>
+                                <label><input type="checkbox" name="character">Новий</label>
+                                <label><input type="checkbox" name="character">Нерозмитнений</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="fuel">Тип палива</label>
+                            </td>
+                            <td>
+                                <select id="fuel">Вибір
+                                    <option value="">Бензин</option>
+                                    <option value="">Дизель</option>
+                                    <option value="">Газ</option>
+                                    <option value="">Газ/Бензин</option>
+                                    <option value="">Гибрид</option>
+                                    <option value="">Електро</option>
+                                    <option value="">Газ метан</option>
+                                    <option value="">Газ пропан-бутан</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="gear">Тип коробки передач</label>
+                            </td>
+                            <td>
+                                <select id="gear">Вибір
+                                    <option value="">Автомат</option>
+                                    <option value="">Механіка</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="color">Колір</label>
+                            </td>
+                            <td>
+                                <select id="color">Вибір
+                                    <option value="">Бежевий</option>
+                                    <option value="">Чорний</option>
+                                    <option value="">Синій</option>
+                                    <option value="">Коричневий</option>
+                                    <option value="">Зелений</option>
+                                    <option value="">Сірий</option>
+                                    <option value="">Помаранчевий</option>
+                                    <option value="">Червоний</option>
+                                    <option value="">Білий</option>
+                                    <option value="">Жовтий</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="comfort">Комфорт</label>
+                            </td>
+                            <td>
+                                <label><input type="checkbox" name="comfort">Кондиціонер</label>
+                                <label><input type="checkbox" name="comfort">Шкіряний салон</label>
+                                <label><input type="checkbox" name="comfort">Запасне колесо</label>
+                                <label><input type="checkbox" name="comfort">Люк</label>
+                                <label><input type="checkbox" name="comfort">Підігрів сидіння</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                    <p>
+                        <button type="search">Почати пошук</button>
+                        <button type="reset">Скинути данні</button>
+                    </p>    
+            </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
