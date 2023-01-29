@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/img-01.png">
     <title>Пошук</title>
 <style>   
     table {
@@ -31,9 +32,9 @@
     <header>
 
     </header>
+
     <main>
-        <form action="https://fom.in.ua/echo" method="post"> 
-            <form>
+            <form action="https://fom.in.ua/echo" method="post">
                 <table>
                     <thead>
                         <tr>
@@ -46,7 +47,7 @@
                                 <label for="type">Тип кузова</label>
                             </td>
                             <td>
-                                <select id="type">Вибір
+                                <select id="type"> 
                                     <option value="">Універсал</option>
                                     <option value="">Седан</option>
                                     <option value="">Хетчбек</option>
@@ -63,7 +64,7 @@
                                 <label for="mark">Марка авто</label>
                             </td>
                             <td>
-                                <select id="mark">Вибір
+                                <select id="mark">
                                     <option value="">Audi</option>
                                     <option value="">BMW</option>
                                     <option value="">Ford</option>
@@ -84,7 +85,7 @@
                                 <label for="country">Країна виробник</label>
                             </td>
                             <td>
-                                <select id="country">Вибір
+                                <select id="country">
                                     <option value="">Японія</option>
                                     <option value="">Німеччина</option>
                                     <option value="">Польща</option>
@@ -106,7 +107,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="year">Рік випуску</label>
+                                <label>Рік випуску</label>
                             </td>
                             <td>
                                 <input type="number" min="1999" max="2023"> 
@@ -114,7 +115,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="character">Стан</label>
+                                <label>Стан</label>
                             </td>
                             <td>
                                 <label><input type="checkbox" name="character">Б/у</label>
@@ -127,7 +128,7 @@
                                 <label for="fuel">Тип палива</label>
                             </td>
                             <td>
-                                <select id="fuel">Вибір
+                                <select id="fuel">
                                     <option value="">Бензин</option>
                                     <option value="">Дизель</option>
                                     <option value="">Газ</option>
@@ -144,7 +145,7 @@
                                 <label for="gear">Тип коробки передач</label>
                             </td>
                             <td>
-                                <select id="gear">Вибір
+                                <select id="gear">
                                     <option value="">Автомат</option>
                                     <option value="">Механіка</option>
                                 </select>
@@ -155,7 +156,7 @@
                                 <label for="color">Колір</label>
                             </td>
                             <td>
-                                <select id="color">Вибір
+                                <select id="color">
                                     <option value="">Бежевий</option>
                                     <option value="">Чорний</option>
                                     <option value="">Синій</option>
@@ -171,7 +172,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="comfort">Комфорт</label>
+                                <label>Комфорт</label>
                             </td>
                             <td>
                                 <label><input type="checkbox" name="comfort">Кондиціонер</label>
@@ -184,11 +185,12 @@
                     </tbody>
                 </table>
                     <p>
-                        <button type="search">Почати пошук</button>
+                        <button type="submit">Почати пошук</button>
                         <button type="reset">Скинути данні</button>
                     </p>    
             </form>
     </main>
+
     <footer>
 
     </footer>
